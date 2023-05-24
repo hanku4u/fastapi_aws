@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 echo "Installing apt libraries"
-sudo apt update && sudo apt install -y zsh git wget curl
+# sudo apt update && sudo apt install -y zsh git wget curl
+apt update && apt install -y zsh git wget curl
 
 echo "##############################################"
 echo "Install Oh My Zsh"
@@ -25,7 +26,8 @@ UTILS
 echo "##############################################"
 echo "Download fontfiles"
 echo "##############################################"
-sudo mkdir -p /mnt/c/temp/
+# sudo mkdir -p /mnt/c/temp/
+mkdir -p /mnt/c/temp/
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf -P /mnt/c/temp/
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf -P /mnt/c/temp/
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf -P /mnt/c/temp/
